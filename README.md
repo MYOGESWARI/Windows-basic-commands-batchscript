@@ -25,51 +25,74 @@ Execute the necessary commands/batch file for the desired output.
 Create a directory named "my-folder"
 
 ## COMMAND AND OUTPUT
+mkdir %userprofile%\Desktop\MyLab'
 
-Remove the directory "my-folder"
+
+<img width="707" height="51" alt="image" src="https://github.com/user-attachments/assets/3514d4a9-4b84-42b7-b275-55e5f3342b76" />
+
+Change to the "MyLab" directory and create an empty text file named "MyFile.txt" inside it.
 
 ## COMMAND AND OUTPUT
+cd %userprofile%\Desktop\MyLab
 
+
+<img width="650" height="106" alt="image" src="https://github.com/user-attachments/assets/9e71b3c9-1dc8-42d8-bbf4-a96e82c9ea57" />
+
+type nul > MyFile.txt
+
+<img width="698" height="101" alt="image" src="https://github.com/user-attachments/assets/038a5548-6c7d-44cd-8516-a5bc71af6c50" />
 
 Create the file Rose.txt
 
 ## COMMAND AND OUTPUT
+dir %userprofile%\Desktop\MyLab
+
+<img width="815" height="321" alt="image" src="https://github.com/user-attachments/assets/d6baec58-cf37-400a-993b-e3a2e8f02577" />
 
 
 Create the file hello.txt using echo and redirection
 
 ## COMMAND AND OUTPUT
 
+mkdir %userprofile%\Desktop\Backup
+
+
+<img width="800" height="102" alt="image" src="https://github.com/user-attachments/assets/3a252f76-c863-4465-ab4b-ba7650d01f9c" />
+
+
+copy MyFile.txt %userprofile%\Desktop\Backup
+
+
+<img width="925" height="143" alt="image" src="https://github.com/user-attachments/assets/407c7fbb-f6b0-4f58-ab10-6359730aa50d" />
+
 Copy the file hello.txt into the file hello1.txt
 
 ## COMMAND AND OUTPUT
+mkdir %userprofile%\Desktop\Documents
+
+
+<img width="891" height="223" alt="image" src="https://github.com/user-attachments/assets/fd9b771e-5b08-4a31-97cf-b23ec21b6b57" />
+
+
 
 Remove the file hello1.txt
 
-## COMMAND AND OUTPUT
-
-List out the file hello1.txt in the current directory
-
-## COMMAND AND OUTPUT
-
-List out all the associated file extensions 
-
-## COMMAND AND OUTPUT
-
-
-Compare the file hello.txt and rose.txt
-
-## COMMAND AND OUTPUT
 
 ## Exercise 2: Advanced Batch Scripting
 Create a batch file named on the desktop. The batch file need to have a variable assigned with a desired name for ex. name="John" and display as "Hello, John".
 
+COMMAND:
 
-
+@echo off
+mkdir %userprofile%\Desktop\DocBackup
+copy %userprofile%\Documents\*.docx %userprofile%\Desktop\DocBackup
+echo Backup completed successfully!
 
 
 ## OUTPUT
 
+
+<img width="957" height="247" alt="image" src="https://github.com/user-attachments/assets/53be3072-dc22-41e1-984b-e20b1188719b" />
 
 
 Create a batch file  on the desktop that checks whether a user-input number is odd or not. The script should:
